@@ -26,6 +26,24 @@ li{
     padding: 0;
 }
 form{
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
+    max-width: 290px;
+}
+
+.title-form{
+    text-align: left;
+    display: block; 
+    color: #49F3CB;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#form_radio-span{
+    display: block; 
+    color: #49F3CB;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.form_radio-label{
+    text-transform: capitalize;
 }

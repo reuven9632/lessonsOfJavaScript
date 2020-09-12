@@ -13,8 +13,26 @@
 
 <body>
     <form action="" method="POST" name="first_form" id="">
-        <label for="name">name: </label>
-        <input type="text" name="name" placeholder="entr name here">
+        <span class="title-form">This is new form</span>
+        <div class="name">
+            <label for="name">name: </label>
+            <input type="text" name="name" placeholder="enter name here">
+        </div>
+
+        <div class="password">
+            <label for="password">Password: </label>
+                <input type="password" name="password" placeholder="enter password here">
+        </div>
+        
+        <div class="form_radio">
+            <span class="form_radio-span">Gender:</span>
+
+            <label class="form_radio-label" for="male">male: </label>
+            <input type="radio" name="gender" id="male">
+
+            <label class="form_radio-label" for="female">female: </label>
+            <input type="radio" name="gender" id="female">
+        </div>
     </form>
 </body>
 
