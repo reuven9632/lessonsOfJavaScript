@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <form action="" method="POST" name="first_form" id="">
+    <form  method="post" name="form" id="form">
         <span class="title-form">This is new form</span>
         <div class="name">
             <label for="name">name: </label>
@@ -32,11 +32,15 @@
 
             <label class="form_radio-label" for="female">female: </label>
             <input type="radio" name="gender" id="female">
+
         </div>
+        <input type="button" onclick="start_form(document.getElementById('form'))" name="button_submit" class="button_submit" value="send">
     </form>
-</body>
+    <div class="message">Enter Data</div>
+</body> 
 
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <Script src="lessonOfJavaScript.js"></Script>
 
 </html>

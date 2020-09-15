@@ -25,19 +25,27 @@ li{
     margin: 0;
     padding: 0;
 }
-form{
+form,
+.message,
+.message_error,
+.message_ettention{
     text-align: left;
     margin: 0 auto;
     max-width: 290px;
 }
 
 .title-form{
-    text-align: left;
+    text-align: center;
     display: block; 
     color: #49F3CB;
     font-size: 25px;
     margin-bottom: 20px;
+} 
+form div{
+    display: flex;
+    justify-content: space-between;
 }
+
 #form_radio-span{
     display: block; 
     color: #49F3CB;
@@ -46,4 +54,23 @@ form{
 }
 .form_radio-label{
     text-transform: capitalize;
+}
+.button_submit{
+    width: 92px;
+    height: 20px;
+    text-align: center;
+}
+.button_submit:hover{
+    color: #042525;
+    background-color: #49f3cb;
+}
+.message_error{
+    color: rgb(224, 207, 207);
+    background-color: rgb(180, 15, 15);
+    text-align: center;
+}
+.message_ettention{
+    color: rgb(209, 218, 160);
+    background-color: rgb(136, 180, 15);
+    text-align: center;
 }
