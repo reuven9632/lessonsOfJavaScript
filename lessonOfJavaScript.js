@@ -7,7 +7,7 @@ while (!start_form) {
         if (tt(name, "name") && tt(password, "password") && tt(gender, "gender")) {
             window.location.replace("http://www.google.com");
             return true;
-        
+        }
         /* if (name.trim() == "")
             $('.message').show().attr('class', "message_error").html('Error: name is not available');
         else if (password.trim() == "") {
