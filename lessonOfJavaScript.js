@@ -4,8 +4,8 @@ while (!start_form) {
             password = form.password.value,
             gender = form.gender.value;
 
-        if (tt(name, "name") && tt(password, "password") && tt(gender, "gender")) {
-            window.location.replace("http://www.google.com");
+        if (takeValToLook(name, "name") && takeValToLook(password, "password") && takeValToLook(gender, "gender")) {
+            window.location.replace("http://reuven9632.github.io/AlonaNails/");
             return true;
         }
         /* if (name.trim() == "")
@@ -22,7 +22,7 @@ while (!start_form) {
     }
 }
 
-function tt(name, val) {
+function takeValToLook(name, val) {
     if (name.trim() == "") {
         $('<div class="message_error">Error: ' + val + ' is not available</div>').insertAfter('.message');
         remuveMe();
