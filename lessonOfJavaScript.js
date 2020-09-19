@@ -5,7 +5,7 @@ while (!start_form) {
             gender = form.gender.value;
 
         if (takeValToLook(name, "name") && takeValToLook(password, "password") && takeValToLook(gender, "gender")) {
-            window.location.replace("http://reuven9632.github.io/AlonaNails/");
+            window.location.replace("https://reuven9632.github.io/AlonaNails/");
             return true;
         }
         /* if (name.trim() == "")
