@@ -8,28 +8,39 @@ while (!start_form) {
             window.location.replace("https://reuven9632.github.io/AlonaNails/");
             return true;
         }
-        /* if (name.trim() == "")
-            $('.message').show().attr('class', "message_error").html('Error: name is not available');
-        else if (password.trim() == "") {
-            alert("you mast write password");
-            $('.message').attr('class', "message_exeption").html('Error: you mast write password');
-        }
-        else if (!gender)
-            // alert("you mast choise gender");
-            $('.message').attr('class', "message_exeption").html('Error: you mast choise gender');
-        else
-            window.location.replace("http://www.google.com"); */
     }
 }
 
 function takeValToLook(name, val) {
     if (name.trim() == "") {
         $('<div class="message_error">Error: ' + val + ' is not available</div>').insertAfter('.message');
-        remuveMe();
+        removeMe();
     }
     else
         return true;
 }
-function remuveMe() {
-    var remuve = setInterval("$('.message_error').remove()", 7000);
+function removeMe() {
+    var remove = setInterval("$('.message_error').remove()", 7000);
 }
+
+
+
+$(document).ready(function () {
+   $.ajax({
+       type: "post",
+       url: "funcForm.php",
+       data: ({name: "Jekh", number: 5}),
+       dataType: "html",
+       beforeSend: function () {
+            $('.message_error').html("<p>wait please...</p>");
+        },
+       success: function (data) {
+        $('.message_error').html("<p>sending was success!!!</p>");
+        // $(".data").text(data);
+        if (data == "success")
+            $(".data").text("success");
+            else 
+            $(".data").text("fail");
+       }
+   }); 
+});
